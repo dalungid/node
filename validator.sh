@@ -1,0 +1,14 @@
+crossfid tx staking create-validator \
+--amount 1000000mpx \
+--from $WALLET \
+--commission-rate 0.1 \
+--commission-max-rate 0.2 \
+--commission-max-change-rate 0.01 \
+--min-self-delegation 1 \
+--pubkey $(crossfid tendermint show-validator) \
+--moniker "Plankton Dev" \
+--identity "" \
+--details "For more information, Visit >> https://node.poptech.id/crossfi-testnet" \
+--chain-id crossfi-evm-testnet-1 \
+--gas auto --gas-adjustment 1.5 --gas-prices 10000000000000mpx \
+-y
